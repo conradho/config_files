@@ -1,0 +1,56 @@
+!Swap capslock with mode_switch
+clear Lock
+keysym Caps_Lock = Mode_switch Mode_switch
+! in vim, remap Mode_switch to escape
+keysym Escape = Caps_Lock
+add Lock = Caps_Lock
+
+!make right alt -> right control
+! but doesn't work for ctrl+alt+x
+! instead, use ctrl+shift+x as shortcuts (easier)
+remove Control = Control_R
+! need to clear original Alt_R functions
+remove Mod1 = Alt_R
+keycode 108 = Control_R Control_R Control_R Control_R
+add Control = Control_R
+
+keycode 43 = h H Left Left
+keycode 44 = j J Down Down
+keycode 45 = k K Up Up
+keycode 46 = l L Right Right
+keycode 24 = q Q Escape
+keycode 36 = Return NoSymbol Escape
+keycode 30 = u U Prior
+keycode 40 = d D Next
+keycode 58 = m M BackSpace
+keycode 59 = comma less Delete
+keycode 19 = 0 parenright Home
+keycode 13 = 4 dollar End
+! keycode 113 = Left Left Left Left
+! keycode 114 = Right Right Right Right 
+! keycode 116 = Down Down Down Down 
+! keycode 111 = Up Up Up Up 
+! make backspace not work
+! keycode 22 = Escape Escape Escape
+! one attempt to make ctrl+alt+x work is to make
+! left alt -> also altgr (or any other modeshift)
+! and when you assign keycodes
+! keycode 108 = x x x x (instead of just 108 = x)
+! for different modes
+! The first keysym is used when no modifier key is pressed in 
+! conjunction with this key, the second with Shift, the third 
+! when the Mode_switch key is used with this key and the fourth 
+! when both the Mode_switch and Shift keys are used.
+! "keycode 105 = Mode_switch Mode_switch" to assign new modeswit key
+
+!Swap right control and right alt
+! remove Control = Control_R
+! remove Mod1 = Alt_R  ! can also do clear Mod1
+! keycode 105 = Alt_R  ! Alt_L is 64; Alt_R is 105
+! keycode 108 = Control_R
+! add Control = Control_R
+! add Mod1 = Alt_R
+
+
+!Swap semicolon with colon
+keycode 47 = colon semicolon 

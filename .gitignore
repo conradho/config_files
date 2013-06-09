@@ -1,0 +1,19 @@
+.*
+Desktop
+Documents
+Downloads
+Templates
+tmp
+mnt
+*.log
+*.core
+*.swp
+*.swo
+*.bak
+Jts
+Pictures
+Ubuntu One
+build
+examples.desktop
+robots.txt
+todo.txt

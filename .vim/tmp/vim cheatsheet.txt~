@@ -1,0 +1,55 @@
+install vim windows and call vim windows from cygwin to avoid syntax/installation issues
+for vim windows:
+.vimrc ==> c/programfiles/Vim/_vimrc
+~/.vim/colors ==> c/programfiles/Vim/vimfiles/colors  
+
+setup Vim profile at ~./vimrc
+for syntax highlighting, need to download 
+most updated python.vim and put into 
+/usr/share/vim/vim73/syntax/python.vim
+need to open with administrator rights and chg for gvim to load vimrc as well
+
+    " set fileformat (no 's' for single file use) =unix or =dos
+    set fileformats=dos
+    " syntax highlighting
+    syntax on
+    " tab width = 4 spaces
+    set tabstop=4
+    " indent width = 4
+    set shiftwidth=4
+    "indent rounded to next full shift width
+    set shiftround
+    " expand tabs to spaces
+    set expandtab
+    "auto-indent code blocks
+    set autoindent
+    " always enable status line
+    set laststatus=2
+    " change status line color based on mode
+    if version >= 700
+    au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=undercurl guisp=Magenta
+    au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
+    endif
+    "show line numbers
+    set number
+    "show row and column
+    set ruler
+    "remaps ; to : for easier commands
+    nnoremap ; ::yntax on
+
+
+search and replace \ for /
+:s/\\/\//g
+:s/__/__/g
+the exit character is \ 
+
+installing pathogen
+- git clone from https://github.com/tpope/vim-pathogen.git
+- copy into programfiles/vim/vimfiles/autoload/pathogen.vim
+installing plugins
+- download/git clone to desktop
+- copy into programfiles/vim/vimfiles/bundle/
+- will be bundle/plugin_folder/autoload, bundle/plugin_folder/colors etc
+- call plugins:
+    - NERDTree
+    - 

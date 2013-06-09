@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/coho/Documents/shared_platform/notes/setup/cmdline'
+let g:netrw_dirhist_2='/home/coho/Documents/bill/bigcentric/account'
+let g:netrw_dirhist_3='/home/coho/Documents/bill/bigcentric/products'
+let g:netrw_dirhist_4='/usr/local/lib/python2.7/dist-packages/bootstrap/static/bootstrap'
+let g:netrw_dirhist_5='/home/coho/Documents/bill/bigcentric'
+let g:netrw_dirhist_6='/home/coho/Documents/bill/bigcentric/verbose_interactions/templates/verbose_interactions'
+let g:netrw_dirhist_7='/home/coho/Documents/bill/bigcentric/verbose_interactions/templates'
+let g:netrw_dirhist_8='/etc/apache2/sites-available'
