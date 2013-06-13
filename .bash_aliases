@@ -11,6 +11,8 @@ alias bill='cd ~/Documents/bill/bigcentric; l'
 alias online='g ~/Documents/python_online/python_online'
 alias aws2='ssh cho@ec2-54-224-174-69.compute-1.amazonaws.com'
 alias aws='ssh cho@184.72.238.1'
+alias restart='sudo service apache2 restart'
+alias error='sudo bash -c "cd /var/log/apache2; clear; ls -al; bash"'
 # might need sudo for this
 alias windows='cd /media/OS/Users/coho; l'
 alias gsm='gnome-system-monitor'
