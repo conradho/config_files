@@ -22,11 +22,7 @@ alias gsm='gnome-system-monitor'
 
 # to debug, run with -D and -V
 function v () {
-	if [ $(vim --serverlist | grep COHO) ]; then
-		vim --servername COHO --remote $1
-	else
-		vim --servername COHO $1
-	fi
+	vim $1
 }
 
 
