@@ -1,0 +1,3 @@
+
+# be case insensitive when tabbing
+set completion-ignore-case on
