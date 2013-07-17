@@ -17,6 +17,7 @@ alias error='sudo bash -c "cd /var/log/apache2; clear; ls -al; bash"'
 alias windows='cd /media/OS/Users/coho; l'
 alias gsm='gnome-system-monitor'
 
+export GIT-SSH = ~/bin/ssh-git1
 
 # alias/functions
 
