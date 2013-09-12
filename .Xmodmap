@@ -54,3 +54,6 @@ keycode 13 = 4 dollar End
 
 !Swap semicolon with colon
 keycode 47 = colon semicolon 
+
+! right windows becomes right click menu
+keycode 134 = Menu Menu Menu Menu
