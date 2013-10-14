@@ -3,7 +3,7 @@ alias c='clear'
 alias l='clear; ls -ABhl'
 # could do ls | less, but then won't have color
 alias helper='cd ~/Documents/helper/helper; l'
-alias coho='cd ~/Documents/COHO/cohodb; l'
+alias coho='cd ~/Documents/coho_website/coho; l'
 alias jae='cd ~/Documents/bigcentric/bigcentric; l'
 alias notes='cd ~/Documents/notes; l'
 alias util='cd ~/Documents/shared_platform/utilities; l'
